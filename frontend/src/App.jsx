@@ -8,6 +8,9 @@ import Login from "./pages/Login";
 import Cart from "./pages/Cart";
 import { Navbar } from "./components/Navbar";
 
+
+
+
 const App = () => {
   return(
      <div>
@@ -15,12 +18,12 @@ const App = () => {
     <Routes>
     <Route path="/" element={<Home/>}/>
     <Route path="/categories" element={<Categories/>}/>
-    <Route path="/makeup/:makeupId" element={<Makeup/>}/>
-    <Route path="/skincare/:skincareId" element={<Skincare/>}/>
+    <Route path="/makeup" element={<Makeup/>}/>
+    {/* <Route path="/makeup/:makeupId" element={<Makeup/>}/> */}
+    <Route path="/skincare" element={<Skincare/>}/>
+    {/* <Route path="/skincare/:skincareId" element={<Skincare/>}/> */}
     <Route path="/login" element={<Login/>}/>
     <Route path="/cart" element={<Cart/>}/>
-
-  
     </Routes>
   </div>
 )
