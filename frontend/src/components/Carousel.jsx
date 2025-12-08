@@ -2,24 +2,21 @@ import React from 'react';
 
 const Carousel = ({Carousels}) => {
   
-  // Define the style object for the background image
+ 
   const backgroundStyle = {
-    // Note: CSS properties are camelCased in JS objects
-    // backgroundImage: "url('https://i.ibb.co/5xLFydpZ/carousel-1.jpg')",
     backgroundImage: `url('${Carousels.imageURL}')`
   };
 
   return (
-    // 1. Changed 'class' to 'className'
-    <header className="w-full relative -mt-[68px]"> 
+       
       <div id="carousel-container" className="carousel w-full">
         <div
-          // 1. Changed 'class' to 'className'
+          
           className="carousel-item relative w-full carousel-item-full bg-cover bg-center"
-          // 2. Used the JavaScript style object
+          
           style={backgroundStyle}
         >
-          {/* 1. Changed 'class' to 'className' */}
+          
           <div className="absolute inset-0 bg-black/20 z-10"></div>
           
           <div
@@ -46,7 +43,7 @@ const Carousel = ({Carousels}) => {
           </div>
         </div>
       </div>
-    </header>
+    
   );
 }
 

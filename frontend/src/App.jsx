@@ -7,6 +7,7 @@ import Skincare from "./pages/Skincare";
 import Login from "./pages/Login";
 import Cart from "./pages/Cart";
 import { Navbar } from "./components/Navbar";
+import Fragrance from "./pages/Fragrance";
 
 
 
@@ -21,6 +22,7 @@ const App = () => {
     <Route path="/makeup" element={<Makeup/>}/>
     {/* <Route path="/makeup/:makeupId" element={<Makeup/>}/> */}
     <Route path="/skincare" element={<Skincare/>}/>
+    <Route path="/fragrance" element={<Fragrance/>}/>
     {/* <Route path="/skincare/:skincareId" element={<Skincare/>}/> */}
     <Route path="/login" element={<Login/>}/>
     <Route path="/cart" element={<Cart/>}/>

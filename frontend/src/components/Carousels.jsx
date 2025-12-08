@@ -10,7 +10,7 @@ const Carousels = () => {
 
   return (
     <div>
-    <div id="carousel-container" className="carousel w-full relative -mt-[68px]">
+     <header className="w-full relative -mt-[68px]"> 
     
         
          
@@ -18,9 +18,9 @@ const Carousels = () => {
             {carousels.map((Carousels)=>(
                 <Carousel key={Carousels.id} Carousels={Carousels}></Carousel>
             ))}
-        
+      </header>  
       </div>
-      </div>
+      
     
   )
 }

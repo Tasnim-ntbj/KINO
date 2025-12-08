@@ -1,15 +1,40 @@
 import React, { useState } from 'react';
 import { NavLink , Link} from 'react-router-dom';
+import Login from '../pages/Login';
 
 export const Navbar = () => {
     
     const [isSidebarOpen, setIsSidebarOpen] = useState(false);
+    const [isLoginOpen, setIsLoginOpen] = useState(false);
 
-    
+
+     // --- Handlers ---
     const toggleSidebar = () => {
         setIsSidebarOpen(prev => !prev);
+        
+        setIsLoginOpen(false); 
     };
 
+    
+    const toggleLogin = (e) => {
+        // Prevent default Link navigation when clicking the button
+        if (e) e.preventDefault(); 
+        
+        setIsLoginOpen(prev => !prev);
+        setIsSidebarOpen(false); 
+    };
+
+    
+
+    
+    // const loginPanelClasses = `
+    //     fixed top-0 right-0 h-full w-80 md:w-96 p-6 bg-base-100 shadow-2xl z-50 
+    //     transform transition-transform duration-600
+    //     ${isLoginOpen ? 'translate-x-0' : 'translate-x-full'}
+    // `;
+    
+    
+    
 
     const sidebarClasses = `
         menu flex flex-col bg-base-100  w-56 
@@ -39,16 +64,17 @@ window.addEventListener("scroll", () => {
       class="navbar bg-transparent border-b-0 sticky top-0 z-50 navbar-light-text"
     >
       <div class="navbar-start">
-        
+        {/* menu  */}
         <button class="btn btn-ghost flex items-center space-x-2" onClick={toggleSidebar}>
           <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
   <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
 </svg>
-<span class="text-lg font-medium">Menu</span>
+<span class="text-sm font-medium">Menu</span>
 </button>
 
+{/* search  */}
   <NavLink to='/'>
-       <button class="btn btn-ghost btn-circle flex items-center justify-center">
+       <button class="btn btn-ghost  flex items-center   space-x-2 justify-center">
   <svg
     xmlns="http://www.w3.org/2000/svg"
     fill="none" 
@@ -64,7 +90,9 @@ window.addEventListener("scroll", () => {
       d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
     />
   </svg>
+  <span class="text-sm font-medium">Search</span>
 </button>
+
 </NavLink>
 </div>
 
@@ -91,7 +119,7 @@ window.addEventListener("scroll", () => {
 
             {/* login btn */}
             <NavLink to='/login'>
-              <button className="btn btn-ghost btn-circle">
+              <button className="btn btn-ghost btn-circle" onClick={toggleLogin} >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   className="h-5 w-5"
@@ -113,6 +141,13 @@ window.addEventListener("scroll", () => {
       </div>
 
 
+
+
+
+
+
+
+
       
 
 {/* sidebar  */}
@@ -127,20 +162,32 @@ window.addEventListener("scroll", () => {
     <ul>
       <li><NavLink onClick={toggleSidebar} to='/skincare' ><a>Skincare</a></NavLink></li>
       <li><NavLink onClick={toggleSidebar} to='/makeup'><a>Makeup</a></NavLink></li>
-      <li><NavLink onClick={toggleSidebar} to='/fragnance'><a>Fragnance</a></NavLink></li>
+      <li><NavLink onClick={toggleSidebar} to='/fragrance'><a>Fragrance</a></NavLink></li>
       
     </ul>
   </li>
 </ul>
 
+{/*Login sidebar  */}
+{/* <div className={loginPanelClasses}>
+        <Login onClose={toggleLogin} /> 
+            </div> */}
 
-      {/*
+
+
+      
       {isSidebarOpen && (
         <div 
           className="fixed inset-0 bg-black opacity-20 z-40 transition-opacity duration-600"
-          onClick={toggleSidebar} // Clicking the backdrop closes the sidebar
+          onClick={toggleSidebar} 
         ></div>
-      )} */}
+      )} 
+     
     </>
   );
 };
+
+
+
+
+

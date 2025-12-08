@@ -5,77 +5,89 @@ body{
 }
 
   
-
-body {
-
-  scrollbar-color: rgba(66, 65, 65, 0.87) #000000;
-  scrollbar-width: thin; 
  
+    /* === 4. Scrollbar Styling (New Section) === */
+    body {
+      /* Standard CSS property: thumb track */
+      scrollbar-color: rgba(66, 65, 65, 0.87) #000000;
+      /* Also recommended for better cross-browser compatibility */
+      scrollbar-width: thin;
+    }
+
+    /* WebKit browsers (Chrome, Safari) */
+    ::-webkit-scrollbar {
+      width: 8px;
+      /* Set a narrow width */
+    }
+
+    /* The fixed track background */
+    ::-webkit-scrollbar-track {
+      background: #4241419a;
+      /* Light gray track */
+    }
+
+    /* The moveable thumb indicator (The part you want black) */
+    ::-webkit-scrollbar-thumb {
+      background: rgba(12, 12, 12, 0.616);
+      border-radius: 10px;
+      /* Optional: adds rounded corners */
+    }
+
+    .lv-font {
+      font-family: Louis Vuitton Web, Louis Vuitton Web Fallback,
+        Helvetica Neue, Helvetica, Arial, sans-serif;
+      font-size: 16px;
+    }
+
+    .carousel-item-full {
+      min-height: 90vh;
+    }
+
+
+
+.navbar-light-text {
+    color: white;
+    transition: all 0.3s ease-in-out;
 }
 
-::-webkit-scrollbar {
-  width: 8px; 
+
+.navbar-light-text .btn-ghost svg {
+    stroke: white;
 }
 
-/* je jaegae scroll kore  */
-::-webkit-scrollbar-track {
-  background: #4241419a; 
+
+
+
+.navbar-light-text .btn-ghost:hover span {
+  color: #1f2937 !important; 
 }
 
-/* movable part  */
-::-webkit-scrollbar-thumb {
-  background: rgba(12, 12, 12, 0.616);
-  border-radius: 10px; /* Optional: adds rounded corners */
+.navbar-light-text .btn-ghost:hover svg {
+  stroke: #1f2937 !important; 
 }
-      .lv-font {
-        font-family: Louis Vuitton Web, Louis Vuitton Web Fallback,
-          Helvetica Neue, Helvetica, Arial, sans-serif;
-        font-size: 16px;
-      }
-      .carousel-item-full {
-        min-height: 90vh;
-      }
 
-     
+.navbar-light-text .btn-ghost:hover span {
+    color: #1f2937 !important;
+}
 
-    
-      .navbar-light-text {
-        color: rgb(255, 255, 255);
+.navbar-light-text .btn-ghost:hover svg {
+    stroke: #1f2937 !important; 
+}
 
-        transition: all 0.3s ease-in-out;
-      }
-      
-      .nav-dark-text {
-        color: #1f2937 !important; /* Tailwind's gray-800 */
-      }
-      .nav-dark-text .btn-ghost svg {
-        stroke: #1f2937 !important;
-      }
 
-      /* Transition state: Solid background and dark text on SCROLL */
-      .navbar-scrolled {
-        background-color: white !important;
-        border: none;
-        /* Apply dark text style on hover */
-        color: #1f2937 !important;
-        text-shadow: none !important;
-      }
-      /* Ensure icons are dark when scrolled */
-      .navbar-scrolled .btn-ghost svg {
-        stroke: currentColor;
-      }
 
-      /* Ensure existing dark classes are overridden */
-      #mainNavbar:hover .navbar-light-text {
-        color: #1f2937 !important;
-      }
+.navbar-scrolled {
+    background-color: white !important;
+    border: none;
+    color: #1f2937 !important;
+    text-shadow: none !important;
+}
 
-      /* Adjust icon color for the light state (default) */
-      .navbar-light-text .btn-ghost svg {
-        stroke: rgb(252, 252, 252);
-      }
-      /* Adjust icon color for the scrolled state (dark) */
-      .navbar-scrolled .btn-ghost svg {
-        stroke: currentColor;
-      }
-    
+
+.navbar-scrolled .btn-ghost svg {
+    stroke: currentColor;
+}
+
+.navbar-scrolled span {
+    color: currentColor;
+}
