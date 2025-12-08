@@ -1,0 +1,79 @@
+[
+  {
+    "id": "D001",
+    "name": "Intensive Hydration Cream",
+    "image": "https://i.ibb.co.com/7xkZz0wn/swiss-beauty-prime-pro-with-vit-c-e-soft-smooth-finish1.webp",
+    "size": "50ml",
+    "quality": "Premium",
+    "guarantee": "30 Days Return Guarantee",
+    "warranty": "1 Year Manufacturer Warranty",
+    "color": "White",
+    "price": 27.99,
+    "rating": 4.8,
+    "material": "Shea Butter, Hyaluronic Acid"
+  },
+  {
+    "id": "D002",
+    "name": "Hydrating Serum",
+    "image": "https://i.ibb.co.com/Vcf4B9dh/qolore-all-blur-pro-face-primer.webp",
+    "size": "30ml",
+    "quality": "High",
+    "guarantee": "20 Days Return Guarantee",
+    "warranty": "No Warranty",
+    "color": "Transparent",
+    "price": 32.50,
+    "rating": 4.6,
+    "material": "Hyaluronic Acid, Glycerin"
+  },
+  {
+    "id": "D003",
+    "name": "Moisture Rich Sunscreen SPF 30",
+    "image": "https://i.ibb.co.com/DfjmDpFC/PINKFLASH-Pro-Touch-Makeup-Base-Primer-20g-PF-F1201.webp",
+    "size": "100ml",
+    "quality": "Dermatologist Tested",
+    "guarantee": "1 Month Replacement Guarantee",
+    "warranty": "6 Months Service Warranty",
+    "color": "Light Beige",
+    "price": 21.99,
+    "rating": 4.5,
+    "material": "Zinc Oxide, Aloe Vera"
+  },
+  {
+    "id": "D004",
+    "name": "Gentle Exfoliating Cream",
+    "image": "https://i.ibb.co.com/7Jr8vvWz/guerniss-poreless-mattifying-primer-flawless-base-spf-30-1.webp",
+    "size": "75ml",
+    "quality": "Natural",
+    "guarantee": "No Guarantee",
+    "warranty": "No Warranty",
+    "color": "Cream",
+    "price": 16.50,
+    "rating": 4.4,
+    "material": "Oat Extract, Lactic Acid"
+  },
+  {
+    "id": "D005",
+    "name": "Deep Moisturizing Body Lotion",
+    "image": "https://i.ibb.co.com/0RN0GCN4/Wet-n-Wild-Prime-Focus-Hydrating-Primer-Serum-sku26577-1.webp",
+    "size": "250ml",
+    "quality": "A+",
+    "guarantee": "20 Days Return Guarantee",
+    "warranty": "1 Year Warranty",
+    "color": "Cream White",
+    "price": 13.99,
+    "rating": 4.5,
+    "material": "Cocoa Butter, Almond Oil"
+  },
+  {
+    "product_id": "D1003",
+    "name": "Nourishing Night Cream",
+    "image": "https://i.ibb.co.com/gMScNSCB/dabo-make-up-dark-out-tone-up-primer-30-ml.webp",
+    "size": "60ml",
+    "quality": "Excellent",
+    "guarantee": "1 Year",
+    "warranty": "2 Years",
+    "color": "Light Pink",
+    "price": 41.99,
+    "material": "Ceramides, Avocado Oil"
+  }
+]
