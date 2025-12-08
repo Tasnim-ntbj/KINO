@@ -1,0 +1,78 @@
+[
+  {
+    "id": "P001",
+    "name": "Shoe",
+    "image": "https://i.ibb.co.com/1Y7JX8sZ/OIP.jpg",
+    "size": "Adjustable",
+    "quality": "Premium",
+    "guarantee": "1 Year Replacement Guarantee",
+    "warranty": "2 Years Manufacturer Warranty",
+    "color": "Black",
+    "price": 89.99,
+    "rating": 4.6,
+    "material": "ABS Plastic, Foam Padding"
+  },
+  {
+    "id": "P002",
+    "name": "Perfume Series X",
+    "image": "https://i.ibb.co.com/Lhtw0Rc7/OIP-1.webp",
+    "size": "42mm",
+    "quality": "High",
+    "guarantee": "6 Months Replacement Guarantee",
+    "warranty": "1 Year Service Warranty",
+    "color": "Silver",
+    "price": 129.99,
+    "rating": 4.4,
+    "material": "Aluminum Alloy, Silicone Strap"
+  },
+  {
+    "id": "P003",
+    "name": "Perfume Series Y",
+    "image": "https://i.ibb.co.com/kgnYsFMD/OIP.webp",
+    "size": "Medium",
+    "quality": "Soft Cotton",
+    "guarantee": "15 Days Return Guarantee",
+    "warranty": "No Warranty",
+    "color": "Navy Blue",
+    "price": 19.99,
+    "rating": 4.2,
+    "material": "100% Cotton"
+  },
+  {
+    "id": "P004",
+    "name": "Perfume Series V",
+    "image": "https://i.ibb.co.com/fVpg8gMP/OIP.webp",
+    "size": "30L",
+    "quality": "Water Resistant",
+    "guarantee": "1 Year Replacement Guarantee",
+    "warranty": "1 Year Warranty",
+    "color": "Grey",
+    "price": 39.99,
+    "rating": 4.5,
+    "material": "Polyester, Nylon"
+  },
+  {
+    "id": "P005",
+    "name": "Perfume Series W",
+    "image": "https://i.ibb.co.com/Xx62T7K2/OIP.webp",
+    "size": "350ml",
+    "quality": "A+",
+    "guarantee": "No Guarantee",
+    "warranty": "No Warranty",
+    "color": "White with Print",
+    "price": 9.49,
+    "rating": 4.1,
+    "material": "Ceramic"
+  },{
+    "product_id": "P1003",
+    "name": "Perfume Series P",
+    "image": "https://i.ibb.co.com/hJkN9M9F/OIP.png",
+    "size": "15 inches tall",
+    "quality": "Excellent",
+    "guarantee": "1 year",
+    "warranty": "3 years",
+    "color": "Matte Black",
+    "price": 45.50,
+    "material": "Aluminum + ABS Plastic"
+  }
+]

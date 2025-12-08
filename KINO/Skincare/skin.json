@@ -1,0 +1,79 @@
+[
+  {
+    "id": "S001",
+    "name": "Hydrating Face Cream",
+    "image": "https://i.ibb.co.com/jkVJ9X8f/normal-w-SYkc-Xgf-IAa-MCTIs-Y7c4l416o5-Us-P0.webp",
+    "size": "50ml",
+    "quality": "Premium",
+    "guarantee": "30 Days Return Guarantee",
+    "warranty": "1 Year Manufacturer Warranty",
+    "color": "White",
+    "price": 24.99,
+    "rating": 4.7,
+    "material": "Aloe Vera, Hyaluronic Acid"
+  },
+  {
+    "id": "S002",
+    "name": "Vitamin C Serum",
+    "image": "https://i.ibb.co.com/p6PZJBZw/normal-m-WTq-Pl-ZOg-UOap-ZYQ0l-QJTXEJ8-N9l-Zk.webp",
+    "size": "30ml",
+    "quality": "High",
+    "guarantee": "15 Days Return Guarantee",
+    "warranty": "No Warranty",
+    "color": "Transparent",
+    "price": 34.99,
+    "rating": 4.5,
+    "material": "Vitamin C, Niacinamide"
+  },
+  {
+    "id": "S003",
+    "name": "Sunscreen SPF 50",
+    "image": "https://i.ibb.co.com/rGK4wvR5/normal-k-Wt-YZVrw11a-AZLDytcl-Mm-Ex-Ej44-LMb.webp",
+    "size": "100ml",
+    "quality": "Dermatologist Tested",
+    "guarantee": "1 Month Replacement Guarantee",
+    "warranty": "6 Months Service Warranty",
+    "color": "Light Beige",
+    "price": 19.99,
+    "rating": 4.6,
+    "material": "Zinc Oxide, Titanium Dioxide"
+  },
+  {
+    "id": "S004",
+    "name": "Exfoliating Face Scrub",
+    "image": "https://i.ibb.co.com/VcRcrDM8/normal-co3g-OVpfe-Zo5-QDsz8wi1a9-Gr-RAh-Z4k.webp",
+    "size": "75ml",
+    "quality": "Natural",
+    "guarantee": "No Guarantee",
+    "warranty": "No Warranty",
+    "color": "Brown",
+    "price": 14.50,
+    "rating": 4.3,
+    "material": "Walnut Shell Powder, Vitamin E"
+  },
+  {
+    "id": "S005",
+    "name": "Moisturizing Body Lotion",
+    "image": "https://i.ibb.co.com/x8gg9y0K/normal-6y3-Wxbs42ji-Reg8-PTNce-EXo8-Y4-FYGC.webp",
+    "size": "250ml",
+    "quality": "A+",
+    "guarantee": "20 Days Return Guarantee",
+    "warranty": "1 Year Warranty",
+    "color": "Cream White",
+    "price": 12.99,
+    "rating": 4.4,
+    "material": "Shea Butter, Cocoa Butter"
+  },
+  {
+    "product_id": "S1003",
+    "name": "Anti-Aging Night Cream",
+    "image": "https://i.ibb.co.com/qLBW1CtF/normal-0-CZL24-UI27-Zb-Rs-RFq-BCs-ZFGm3yo1-UP.webp",
+    "size": "60ml",
+    "quality": "Excellent",
+    "guarantee": "1 Year",
+    "warranty": "2 Years",
+    "color": "Light Pink",
+    "price": 39.99,
+    "material": "Retinol, Collagen"
+  }
+]
