@@ -1,9 +1,9 @@
 //MakeUP section - product Categories
 const loadProductCategories = () => {
   fetch("productCategory.json")
-    .then(response => response.json())
-    .then(data => displayProductCategories(data.categories))
-}
+    .then((response) => response.json())
+    .then((data) => displayProductCategories(data.categories));
+};
 
 // const displayProductCategories = (categories) => {
 //   const productCategories = document.getElementById("product-categories");
@@ -15,7 +15,6 @@ const loadProductCategories = () => {
 //   // categoryHeading.classList.add("text-2xl", "font-bold", "mb-2");
 //   // productCategories.appendChild(categoryHeading);
 
-
 //   categories.forEach(category => {
 //     const categoryContent = document.createElement("div");
 //     categoryContent.innerHTML = `<button id="category-based-product-${category.id}" onclick="loadCategoryBasedProduct(${category.id})" class="hover:bg-[#0f0d0e] hover:text-white p-2 rounded-lg w-full text-left">${category.category_name}</button>`;
@@ -26,25 +25,22 @@ const loadProductCategories = () => {
 // }
 // loadProductCategories();
 
-
-
-
 // all make up products
 const loadAllMakeupProducts = () => {
   fetch("allProducts.json")
-    .then(response => response.json())
-    .then(data => displayAllMakeupProducts(data.allMakeupProducts))
-}
+    .then((response) => response.json())
+    .then((data) => displayAllMakeupProducts(data.allMakeupProducts));
+};
 
 const displayAllMakeupProducts = (allProducts) => {
   const allMakeupProducts = document.getElementById("allMakeup-products");
   allMakeupProducts.innerHTML = "";
 
-  allProducts.forEach(product => {
+  allProducts.forEach((product) => {
     const productCard = document.createElement("div");
-    productCard.innerHTML = `<div class="card bg-base-100 w-96 flex flex-col flex-grow h-full min-h-[400px] justify-between transition-transform duration-300 ease-in-out hover:-translate-y-1 hover:shadow-lg">
+    productCard.innerHTML = `<div class="card bg-base-100 w-96 flex flex-col grow h-full min-h-[400px] justify-between transition-transform duration-300 ease-in-out hover:-translate-y-1 hover:shadow-lg">
     <img class="h-[260px] pl-5 pr-5 pt-5" src="${product.image}">
-  <div class="card-body mb-[10px]">
+  <div class="card-body mb-2.5">
     <h2 class="card-title">${product.name}</h2>
     <p>${product.description}</p>
     <div class="flex justify-between">
@@ -55,14 +51,12 @@ const displayAllMakeupProducts = (allProducts) => {
 </div>`;
 
     allMakeupProducts.appendChild(productCard);
-  })
-}
+  });
+};
 loadAllMakeupProducts();
-
 
 // category based products
 const loadCategoryBasedProduct = (id) => {
-  const url = `allProducts.json`
-  fetch()
-
-}
+  const url = `allProducts.json`;
+  fetch();
+};
