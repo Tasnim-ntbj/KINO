@@ -1,0 +1,19 @@
+
+
+.input-group-tailwind input:focus + label,
+
+
+.input-group-tailwind input:valid + label {
+
+
+   
+    transform: translateY(-20px); /* Move label up */
+    font-size: 0.8125rem; /* ~13px */
+    color: #1f2937; /* Dark Gray (or use black: #000) */
+}
+#login-container{
+ background: #fff;
+    padding: 40px 30px;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+    width: 350px;}

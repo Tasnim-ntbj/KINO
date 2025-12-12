@@ -1,11 +1,14 @@
-body{
+/* body{
     font-family: Louis Vuitton Web, Louis Vuitton Web Fallback,
           Helvetica Neue, Helvetica, Arial, sans-serif;
 
-}
+} */
+/* body{
+    font-family: "Wasted Vindey", sans-serif;
 
-  
- 
+} */
+ @import url(https://db.onlinewebfonts.com/c/24361a4e963fa4ff083fd6f05798ffdb?family=Wasted+Vindey);
+
     /* === 4. Scrollbar Styling (New Section) === */
     body {
       /* Standard CSS property: thumb track */
@@ -33,61 +36,10 @@ body{
       /* Optional: adds rounded corners */
     }
 
-    .lv-font {
-      font-family: Louis Vuitton Web, Louis Vuitton Web Fallback,
-        Helvetica Neue, Helvetica, Arial, sans-serif;
-      font-size: 16px;
-    }
+   
 
     .carousel-item-full {
-      min-height: 90vh;
+      min-height: 85vh;
     }
 
 
-
-.navbar-light-text {
-    color: white;
-    transition: all 0.3s ease-in-out;
-}
-
-
-.navbar-light-text .btn-ghost svg {
-    stroke: white;
-}
-
-
-
-
-.navbar-light-text .btn-ghost:hover span {
-  color: #1f2937 !important; 
-}
-
-.navbar-light-text .btn-ghost:hover svg {
-  stroke: #1f2937 !important; 
-}
-
-.navbar-light-text .btn-ghost:hover span {
-    color: #1f2937 !important;
-}
-
-.navbar-light-text .btn-ghost:hover svg {
-    stroke: #1f2937 !important; 
-}
-
-
-
-.navbar-scrolled {
-    background-color: white !important;
-    border: none;
-    color: #1f2937 !important;
-    text-shadow: none !important;
-}
-
-
-.navbar-scrolled .btn-ghost svg {
-    stroke: currentColor;
-}
-
-.navbar-scrolled span {
-    color: currentColor;
-}

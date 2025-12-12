@@ -1,5 +1,5 @@
 import React from 'react'
-
+import styles from './navbar.module.css';
 const Footer = () => {
   return (
     <>
@@ -54,7 +54,7 @@ const Footer = () => {
     <nav>
       <div class="grid grid-flow-col gap-4">
         <div class="navbar-center">
-          <a class="text-3xl font-bold tracking-widest uppercase" href="#">KINO</a>
+          <a className={`text-3xl font-bold tracking-widest ml-10 ${styles.logo}`} href="#">Kino</a>
         </div>
       </div>
     </nav>

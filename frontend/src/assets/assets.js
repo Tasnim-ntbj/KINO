@@ -1,12 +1,12 @@
-// import carousel_1 from "./carousel_1.jpg";
-// import carousel_2 from "./carousel_2.jpg";
-// import carousel_3 from "./carousel_3.jpg";
+import carousel_1 from "./carousel_1.jpg";
+import carousel_2 from "./carousel_2.jpg";
+import carousel_3 from "./carousel_3.jpg";
 
-// export const assets = {
-//   carousel_1,
-//   carousel_2,
-//   carousel_3,
-// };
+export const assets = {
+  carousel_1,
+  carousel_2,
+  carousel_3,
+};
 
 export const carousels = [
   {

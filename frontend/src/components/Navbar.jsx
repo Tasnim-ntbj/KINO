@@ -1,193 +1,94 @@
-import React, { useState } from 'react';
-import { NavLink , Link} from 'react-router-dom';
-import Login from '../pages/Login';
+import { NavLink, Link } from 'react-router-dom';
+import styles from './navbar.module.css';
+import { useState } from 'react';
+
 
 export const Navbar = () => {
     
-    const [isSidebarOpen, setIsSidebarOpen] = useState(false);
-    const [isLoginOpen, setIsLoginOpen] = useState(false);
-
-
-     // --- Handlers ---
-    const toggleSidebar = () => {
-        setIsSidebarOpen(prev => !prev);
-        
-        setIsLoginOpen(false); 
+    
+    const [menu, setMenu] = useState("Home");
+    
+    
+    const handleMenuClick = (name) => {
+        setMenu(name);
     };
 
-    
-    const toggleLogin = (e) => {
-        // Prevent default Link navigation when clicking the button
-        if (e) e.preventDefault(); 
-        
-        setIsLoginOpen(prev => !prev);
-        setIsSidebarOpen(false); 
-    };
+    return (
+        <>
+            {/* --- Main Navbar --- */}
 
-    
-
-    
-    // const loginPanelClasses = `
-    //     fixed top-0 right-0 h-full w-80 md:w-96 p-6 bg-base-100 shadow-2xl z-50 
-    //     transform transition-transform duration-600
-    //     ${isLoginOpen ? 'translate-x-0' : 'translate-x-full'}
-    // `;
-    
-    
-    
-
-    const sidebarClasses = `
-        menu flex flex-col bg-base-100  w-56 
-        fixed top-0 left-0 h-full p-4 shadow-xl z-50 
-        transform transition-transform duration-600
-        ${isSidebarOpen ? 'translate-x-0' : '-translate-x-full'}
-    `;
-
-    const navbar = document.getElementById("mainNavbar");
-const scrollThreshold = 100;
-
-window.addEventListener("scroll", () => {
-  if (window.scrollY > scrollThreshold) {
-    navbar.classList.add("navbar-scrolled");
-  } else {
-    navbar.classList.remove("navbar-scrolled");
-  }
-});
+            <div className="navbar bg-white border-b-0 sticky top-0 z-50 navbar-light-text">
+                
+                <div className="navbar-start">
+                    {/* logo */}
+                    <NavLink to='/'>
+                        <a className={`text-3xl font-bold tracking-widest ml-10 ${styles.logo}`} href="#">
+                            Kino
+                        </a>
+                    </NavLink>
+                </div>
 
 
-  return (
-    <>
-      {/* --- Main Navbar --- */}
-     
-    <div
-      id="mainNavbar"
-      class="navbar bg-transparent border-b-0 sticky top-0 z-50 navbar-light-text"
-    >
-      <div class="navbar-start">
-        {/* menu  */}
-        <button class="btn btn-ghost flex items-center space-x-2" onClick={toggleSidebar}>
-          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
-  <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
-</svg>
-<span class="text-sm font-medium">Menu</span>
-</button>
+                {/* Menu */}
+                <div className="navbar-center font-medium antialiased text-lg">
+                    
+                    <ul className={styles.navMenu}> 
+                        
+                        
+                        <li 
+                            onClick={() => handleMenuClick("Home")}
+                            className={`${styles.navItem} ${menu === "Home" ? styles.active : ''}`}
+                        >
+                            Home
+                        </li>
+                        <li 
+                            onClick={() => handleMenuClick("Menu")}
+                            className={`${styles.navItem} ${menu === "Menu" ? styles.active : ''}`}
+                        >
+                            Menu
+                        </li>
+                        <li 
+                            onClick={() => handleMenuClick("About-us")}
+                            className={`${styles.navItem} ${menu === "About-us" ? styles.active : ''}`}
+                        >
+                            About Us
+                        </li>
+                    </ul>
 
-{/* search  */}
-  <NavLink to='/'>
-       <button class="btn btn-ghost  flex items-center   space-x-2 justify-center">
-  <svg
-    xmlns="http://www.w3.org/2000/svg"
-    fill="none" 
-    viewBox="0 0 20 20" 
-    stroke-width="1.5" 
-    stroke="currentColor" 
-    class="size-6"
-  >
-    <path
-      stroke-linecap="round"
-      stroke-linejoin="round"
-      stroke-width="2"
-      d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
-    />
-  </svg>
-  <span class="text-sm font-medium">Search</span>
-</button>
+                </div>
 
-</NavLink>
-</div>
+                {/* nav end */}
+                <div className="navbar-end">
+                    <div className="flex items-center space-x-4 ml-4">
+                        {/* search */}
+                        <NavLink to='/'>
+                            <button  className='btn btn-ghost btn-circle'>
+                                
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="bi bi-search" viewBox="0 0 16 16">
+                                    <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/>
+                                </svg>
+                            </button>
+                        </NavLink>
+                        
+                        {/* cart btn */}
+                        <NavLink to='/cart'>
+                            <button id="cart-btn" className="btn btn-ghost btn-circle ">
 
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="bi bi-cart" viewBox="0 0 16 16">
+                                    <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M3.102 4l1.313 7h8.17l1.313-7zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2"/>
+                                </svg>
+                            </button>
+                        </NavLink>
 
-        {/* logo */}
-        <div className="navbar-center">
-          <NavLink to='/'>
-            <a className="text-3xl font-bold tracking-widest uppercase" href="#">
-              KINO
-            </a>
-          </NavLink>
-        </div>
-
-        {/* nav end */}
-        <div className="navbar-end">
-          <div className="flex items-center space-x-4 ml-4">
-            {/* cart btn */}
-            <NavLink to='/cart'>
-              <button className="btn btn-ghost btn-circle">
-                 <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"> <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" /> </svg>
-          
-              </button>
-            </NavLink>
-
-            {/* login btn */}
-            <NavLink to='/login'>
-              <button className="btn btn-ghost btn-circle" onClick={toggleLogin} >
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  className="h-5 w-5"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth="2"
-                    d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"
-                  />
-                </svg>
-              </button>
-            </NavLink>
-          </div>
-        </div>
-      </div>
-
-
-
-
-
-
-
-
-
-      
-
-{/* sidebar  */}
-      <ul class={sidebarClasses}>
-        <button className="btn btn-ghost btn-circle self-end mb-4" onClick={toggleSidebar}>
-          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="size-6">
-            <path strokeLinecap="round" strokeLinejoin="round" d="M6 18 18 6M6 6l12 12" />
-          </svg>
-        </button> 
-  <li>
-    <h2 class="menu-title">Categories</h2>
-    <ul>
-      <li><NavLink onClick={toggleSidebar} to='/skincare' ><a>Skincare</a></NavLink></li>
-      <li><NavLink onClick={toggleSidebar} to='/makeup'><a>Makeup</a></NavLink></li>
-      <li><NavLink onClick={toggleSidebar} to='/fragrance'><a>Fragrance</a></NavLink></li>
-      
-    </ul>
-  </li>
-</ul>
-
-{/*Login sidebar  */}
-{/* <div className={loginPanelClasses}>
-        <Login onClose={toggleLogin} /> 
-            </div> */}
-
-
-
-      
-      {isSidebarOpen && (
-        <div 
-          className="fixed inset-0 bg-black opacity-20 z-40 transition-opacity duration-600"
-          onClick={toggleSidebar} 
-        ></div>
-      )} 
-     
-    </>
-  );
+                        {/* login btn */}
+                        <NavLink to='/login'>
+                            <button className="btn btn-ghost rounded-2xl shadow-none transition-colors duration-300 ease-in-out">
+                                <span className='text-gray-600 font-light text-sm'>Sign Up</span> 
+                            </button>
+                        </NavLink>
+                    </div>
+                </div>
+            </div>
+        </>
+    );
 };
-
-
-
-
-
