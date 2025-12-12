@@ -22,7 +22,7 @@ export const Navbar = () => {
                 <div className="navbar-start">
                     {/* logo */}
                     <NavLink to='/'>
-                        <a className={`text-3xl font-bold tracking-widest ml-10 ${styles.logo}`} href="#">
+                        <a className={`text-5xl  tracking-widest ml-20 ${styles.logo}`} href="#">
                             Kino
                         </a>
                     </NavLink>

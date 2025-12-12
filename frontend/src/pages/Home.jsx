@@ -4,6 +4,7 @@ import CarouseOne from '../components/CarouseOne'
 import CarouselTwo from '../components/CarouselTwo'
 import CarouselThree from '../components/CarouselThree'
 import HomeMakeups from '../components/HomeMakeups'
+import CarouselFour from '../components/CarouselFour'
 // import HomeMakeup from '../components/HomeMakeup'
 
 
@@ -19,7 +20,7 @@ const Home = () => {
 <HomeMakeups></HomeMakeups>
       </div>
       
-
+<CarouselFour></CarouselFour>
       <CarouselThree></CarouselThree>
       <Footer></Footer>
       
