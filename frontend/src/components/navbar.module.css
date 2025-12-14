@@ -50,13 +50,15 @@
   
    color: rgb(2, 2, 2);
    font-family: Wasted Vindey, sans-serif;
+   font-weight: 500;
+   
  
 
   cursor: pointer;
 
     position: relative;
 }
-
+/* 
 .navMenu li::before {
 
     content: "";
@@ -81,7 +83,7 @@
 #cart-btn{
   position: relative;
 
-}
+} */
 
 /* 
 .navMenu .active {
@@ -89,3 +91,28 @@
   border-bottom: 2px solid  #49557e;
   transition: 300s;
 } */
+ 
+
+
+.navMenu li::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background: rgb(131, 115, 127);
+    border-radius: 5px;
+    transform: scaleX(0); 
+    transition: transform 0.3s ease;
+    bottom: 0;
+    left: 0;
+}
+
+
+.navMenu li:hover::before {
+    transform: scaleX(1);
+}
+
+.navMenu .active::before {
+    transform: scaleX(1);
+}
+

@@ -23,7 +23,7 @@ export const carousels = [
   {
     id: 2,
     imageURL: "https://i.ibb.co/m5dhPSjD/carousel-2.jpg",
-    preHeader: "New Arrivals",
+    preHeader: "Shop The Trends",
     headerLine1: "Your Next Obsession",
     headerLine2: "Is Right Here",
   },

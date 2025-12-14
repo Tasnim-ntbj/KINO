@@ -54,7 +54,7 @@ const Footer = () => {
     <nav>
       <div class="grid grid-flow-col gap-4">
         <div class="navbar-center">
-          <a className={`text-3xl font-bold tracking-widest ml-10 ${styles.logo}`} href="#">Kino</a>
+          <a className={`text-3xl  tracking-widest ml-10 ${styles.logo}`} href="#">Kino</a>
         </div>
       </div>
     </nav>

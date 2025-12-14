@@ -7,7 +7,7 @@ import Skincare from "./pages/Skincare";
 import Login from "./pages/Login";
 import Cart from "./pages/Cart";
 import { Navbar } from "./components/Navbar";
-import Fragrance from "./pages/Fragrance";
+import Perfumes from "./pages/Perfumes";
 
 
 
@@ -20,9 +20,11 @@ const App = () => {
     <Route path="/" element={<Home/>}/>
     <Route path="/categories" element={<Categories/>}/>
     <Route path="/makeup" element={<Makeup/>}/>
-    {/* <Route path="/makeup/:makeupId" element={<Makeup/>}/> */}
+    <Route path="/makeup/:makeupId" element={<Makeup/>}/>
+    <Route path="/skincare/:skincareId" element={<Skincare/>}/>
+    <Route path="/perfumes/:perfumesId" element={<Perfumes/>}/>
     <Route path="/skincare" element={<Skincare/>}/>
-    <Route path="/fragrance" element={<Fragrance/>}/>
+    <Route path="/perfumes" element={<Perfumes/>}/>
     {/* <Route path="/skincare/:skincareId" element={<Skincare/>}/> */}
     <Route path="/login" element={<Login/>}/>
     <Route path="/cart" element={<Cart/>}/>

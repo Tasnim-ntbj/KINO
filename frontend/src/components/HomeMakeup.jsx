@@ -1,8 +1,10 @@
 import React from 'react'
+import { Link } from 'react-router-dom';
 
 const HomeMakeup = ({ HomeMakeups }) => {
     return (
 
+        <Link to={`/makeup/${HomeMakeups.id}`}>
         <div className="card w-full bg-base-100 shadow-none rounded-none cursor-pointer">
             
             
@@ -26,6 +28,7 @@ const HomeMakeup = ({ HomeMakeups }) => {
             </div>
             
         </div>
+        </Link>
     )
 }
 

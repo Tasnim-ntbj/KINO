@@ -9,6 +9,8 @@
 } */
  @import url(https://db.onlinewebfonts.com/c/24361a4e963fa4ff083fd6f05798ffdb?family=Wasted+Vindey);
 
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
     /* === 4. Scrollbar Styling (New Section) === */
     body {
       /* Standard CSS property: thumb track */
@@ -39,7 +41,7 @@
    
 
     .carousel-item-full {
-      min-height: 85vh;
+      min-height: 70vh;
     }
 
 

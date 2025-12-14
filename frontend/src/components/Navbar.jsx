@@ -8,7 +8,8 @@ export const Navbar = () => {
     
     const [menu, setMenu] = useState("Home");
     
-    
+   
+
     const handleMenuClick = (name) => {
         setMenu(name);
     };
@@ -17,7 +18,7 @@ export const Navbar = () => {
         <>
             {/* --- Main Navbar --- */}
 
-            <div className="navbar bg-white border-b-0 sticky top-0 z-50 navbar-light-text">
+            <div  id="mainNavbar" className="navbar bg-white border-b-0 sticky top-0 z-50 navbar-light-text">
                 
                 <div className="navbar-start">
                     {/* logo */}
@@ -34,25 +35,48 @@ export const Navbar = () => {
                     
                     <ul className={styles.navMenu}> 
                         
-                        
+                        <NavLink to="/">
                         <li 
                             onClick={() => handleMenuClick("Home")}
                             className={`${styles.navItem} ${menu === "Home" ? styles.active : ''}`}
                         >
                             Home
                         </li>
+                        </NavLink>
+
+                        <NavLink to="/perfumes">
                         <li 
-                            onClick={() => handleMenuClick("Menu")}
-                            className={`${styles.navItem} ${menu === "Menu" ? styles.active : ''}`}
+                            onClick={() => handleMenuClick("Perfumes")}
+                            className={`${styles.navItem} ${menu === "Perfumes" ? styles.active : ''}`}
                         >
-                            Menu
+                            Perfumes
                         </li>
+                        </NavLink>
+                       
+                        <NavLink to="/skincare">
+                        <li 
+                            onClick={() => handleMenuClick("SkinCare")}
+                            className={`${styles.navItem} ${menu === "SkinCare" ? styles.active : ''}`}
+                        >
+                        SkinCare
+                        </li>
+                        </NavLink>
+                         <NavLink to="/makeup">
+                        <li 
+                            onClick={() => handleMenuClick("Makeup")}
+                            className={`${styles.navItem} ${menu === "Makeup" ? styles.active : ''}`}
+                        >
+                        Makeup
+                        </li>
+                        </NavLink>
+                    <NavLink to="/about-us">
                         <li 
                             onClick={() => handleMenuClick("About-us")}
                             className={`${styles.navItem} ${menu === "About-us" ? styles.active : ''}`}
                         >
                             About Us
                         </li>
+                        </NavLink>
                     </ul>
 
                 </div>
@@ -82,13 +106,14 @@ export const Navbar = () => {
 
                         {/* login btn */}
                         <NavLink to='/login'>
-                            <button className="btn btn-ghost rounded-2xl shadow-none transition-colors duration-300 ease-in-out">
+                            <button className="btn btn-outline border-0 rounded-2xl hover:bg-black/10 shadow-none transition-colors duration-300 ease-in-out">
                                 <span className='text-gray-600 font-light text-sm'>Sign Up</span> 
                             </button>
                         </NavLink>
                     </div>
                 </div>
             </div>
+            
         </>
     );
 };

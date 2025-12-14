@@ -39,7 +39,7 @@ const CarouselTwo = () => {
                    href="#"
                    className="text-white text-lg uppercase underline mt-8"
                  >
-                   Discover the Collection
+                   Collection Highlights
                  </a>
                </div>
              </div>

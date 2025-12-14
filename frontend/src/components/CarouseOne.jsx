@@ -11,7 +11,7 @@ const CarouseOne = () => {
 
   return (
         //  <header class="w-full relative -mt-[68px]">
-       <div id="carousel-container" class="carousel w-full">
+       <div id="carousel-container" class="carousel w-full  　">
      
         <div
           
@@ -20,7 +20,8 @@ const CarouseOne = () => {
           style={backgroundStyle}
         >
           <div className={styles.headerText}>
-          <div className="absolute inset-0 bg-black/20 z-10"></div>
+          {/* <div className="absolute inset-0  bg-purple-100/10 z-10"></div> */}
+          <div className="absolute inset-0  bg-black/20 z-10"></div>
           
           <div
             className="absolute inset-0 flex items-center justify-center z-20 text-center text-white p-10"

@@ -1,9 +1,7 @@
 import React from 'react'
-import { Link } from 'react-router-dom';
 
-const HomeSkinCare = ({HomeSkinCares}) => {
+const HomeMakeGrid = ({HomeMakeGrids}) => {
   return (
-     <Link to={`/skincare/${HomeSkinCares.id}`}>
     <div className="card w-full bg-base-100 shadow-none rounded-none cursor-pointer">
             
             
@@ -11,8 +9,8 @@ const HomeSkinCare = ({HomeSkinCares}) => {
                 
                 
                 <img 
-                    src={HomeSkinCares.image} 
-                    alt={HomeSkinCares.name} 
+                    src={HomeMakeGrids.image} 
+                    alt={HomeMakeGrids.name} 
                     className="h-full w-full object-cover" 
                 />
                 
@@ -22,15 +20,15 @@ const HomeSkinCare = ({HomeSkinCares}) => {
             </figure>
             
             <div className="card-body p-4">
-                <h2 className="card-title font-normal text-base">{HomeSkinCares.name}</h2>
-                <p className="text-sm text-gray-500">BDT {HomeSkinCares.price}</p>
+                <h2 className="card-title font-normal text-base">{HomeMakeGrids.name}</h2>
+                <p className="text-sm text-gray-500">BDT {HomeMakeGrids.price}</p>
             </div>
             
         </div>
-</Link>
+
    
             
     );
 }
 
-export default HomeSkinCare
+export default HomeMakeGrid
