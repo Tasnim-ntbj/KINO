@@ -1,19 +1,25 @@
-import { NavLink, Link } from 'react-router-dom';
+import { NavLink, Link, useNavigate } from 'react-router-dom';
 import styles from './navbar.module.css';
-import { useState } from 'react';
+import { useContext } from 'react';
+import { ShopContext } from '../context/ShopContext';
+// import { useState } from 'react';
 
 
 export const Navbar = () => {
     
-    
-    const [menu, setMenu] = useState("Home");
+    const {setShowSearch}= useContext(ShopContext);
+    // const [menu, setMenu] = useState("Home");
     
    
 
-    const handleMenuClick = (name) => {
-        setMenu(name);
-    };
+    // const handleMenuClick = (name) => {
+    //     setMenu(name);
+    // };
 
+
+    
+        const navigate = useNavigate();
+    
     return (
         <>
             {/* --- Main Navbar --- */}
@@ -23,7 +29,7 @@ export const Navbar = () => {
                 <div className="navbar-start">
                     {/* logo */}
                     <NavLink to='/'>
-                        <a className={`text-5xl  tracking-widest ml-20 ${styles.logo}`} href="#">
+                        <a className={`text-5xl antialiased text-black/80  tracking-widest ml-20 ${styles.logo}`} href="#">
                             Kino
                         </a>
                     </NavLink>
@@ -32,7 +38,7 @@ export const Navbar = () => {
 
                 {/* Menu */}
                 <div className="navbar-center font-medium antialiased text-lg">
-                    
+{/*                     
                     <ul className={styles.navMenu}> 
                         
                         <NavLink to="/">
@@ -64,7 +70,7 @@ export const Navbar = () => {
                          <NavLink to="/makeup">
                         <li 
                             onClick={() => handleMenuClick("Makeup")}
-                            className={`${styles.navItem} ${menu === "Makeup" ? styles.active : ''}`}
+                            className={`${styles.navItem}`}
                         >
                         Makeup
                         </li>
@@ -77,22 +83,30 @@ export const Navbar = () => {
                             About Us
                         </li>
                         </NavLink>
-                    </ul>
+                    </ul> */}
+                    <ul className={styles.navMenu}> 
+            
+                    <li><NavLink to="/" >Home</NavLink></li>
+                    <li><NavLink to="/perfumes" >Perfumes</NavLink></li>
+                    <li><NavLink to="/skincare">SkinCare</NavLink></li>
+                    <li><NavLink to="/makeup">Makeup</NavLink></li>
+                    <li><NavLink to="/about-us">About Us</NavLink></li>
+                </ul>
 
                 </div>
 
                 {/* nav end */}
                 <div className="navbar-end">
-                    <div className="flex items-center space-x-4 ml-4">
+                    <div className="flex items-center space-x-4 ml-4 bg-white">
                         {/* search */}
-                        <NavLink to='/'>
-                            <button  className='btn btn-ghost btn-circle'>
+                        
+                            <button onClick={()=>setShowSearch(true)} className='btn btn-ghost btn-circle '>
                                 
                                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="bi bi-search" viewBox="0 0 16 16">
                                     <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/>
                                 </svg>
                             </button>
-                        </NavLink>
+              
                         
                         {/* cart btn */}
                         <NavLink to='/cart'>
@@ -105,11 +119,11 @@ export const Navbar = () => {
                         </NavLink>
 
                         {/* login btn */}
-                        <NavLink to='/login'>
-                            <button className="btn btn-outline border-0 rounded-2xl hover:bg-black/10 shadow-none transition-colors duration-300 ease-in-out">
+                        <div >
+                            <button onClick={()=>navigate('/login', {replace:true})} className="btn btn-outline border-0 rounded-2xl hover:bg-black/10 shadow-none transition-colors duration-300 ease-in-out">
                                 <span className='text-gray-600 font-light text-sm'>Sign Up</span> 
                             </button>
-                        </NavLink>
+                        </div>
                     </div>
                 </div>
             </div>

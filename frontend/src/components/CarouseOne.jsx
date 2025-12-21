@@ -1,8 +1,10 @@
 import React from 'react';
 import { assets, carousels } from '../assets/assets';
 import styles from './carousel.module.css';
+import { useNavigate } from 'react-router-dom';
 
 const CarouseOne = () => {
+      const navigate = useNavigate();
  const carouselsData = carousels[0];
     
   const backgroundStyle = {
@@ -11,7 +13,7 @@ const CarouseOne = () => {
 
   return (
         //  <header class="w-full relative -mt-[68px]">
-       <div id="carousel-container" class="carousel w-full  　">
+       <div id="carousel-container" class="carousel w-full">
      
         <div
           
@@ -37,8 +39,8 @@ const CarouseOne = () => {
               
               <div>
                 <a
-                  href="#"
-                  className="text-white text-lg uppercase underline mt-8"
+                   onClick={()=>navigate('/perfumes')}
+                  className="text-white text-lg uppercase underline mt-8 cursor-pointer"
                 >
                   Discover the Collection
                 </a>

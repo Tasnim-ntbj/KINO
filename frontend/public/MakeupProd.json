@@ -2,7 +2,7 @@
 {
 "id": 1,
 "image": "https://i.ibb.co.com/XZsN29kH/Swiss-Beauty-Ultimate-Eyeshadow-Palette-05.webp",
-"name": "Swiss Beauty Ultimate Eyeshadow Palette - 05",
+"name": "Swiss Beauty Ultimate Eyeshadow Palette",
 "description": "9-Colour Eyeshadow Palette: Swiss Beauty Ultimate Eyeshadow palette consists of highly pigmented shades in matte, shimmer, and metallic finishes for creating endless eye looks",
 "category_name": "Eyes",
 "price": 499.00
@@ -10,7 +10,7 @@
 {
 "id": 2,
 "image": "https://i.ibb.co.com/qM3mVb1h/NIRVANA-Color-Eye-and-Face-Palette-SANJHBELA.webp",
-"name": "NIRVANA Color Eye and Face Palette SANJHBELA",
+"name": "NIRVANA Color Eye and Face Style Palette",
 "description": "The Nirvana Color Smokey Eye and Face Palette is a must-have for creating gorgeous smokey eye looks. It includes 9 highly pigmented shades in matte, shimmery, and glittery finishes, as well as contour, blush and highlighter. The versatile color range and easy-to-blend formula make this palette ideal for any makeup lover.",
 "category_name": "Eyes",
 "price": 599.00
@@ -18,7 +18,7 @@
 {
 "id": 3,
 "image": "https://i.ibb.co.com/VWPPXjDL/Swiss-Beauty-36-Color-Eyeshadow-Palette-Shade-01.webp",
-"name": "Swiss Beauty 36 Color Eyeshadow Palette Shade 01",
+"name": "Swiss Beauty 36 Color Eyeshadow Palette",
 "description": "A large tropical tree that bears the world’s biggest fruit, the jackfruit. Its sweet and aromatic flesh is both nutritious and filling, and the tree itself provides generous shade.",
 "category_name": "Eyes",
 "price": 1499.00
@@ -26,7 +26,7 @@
 {
 "id": 4,
 "image": "https://i.ibb.co.com/7JwbpqcN/Swiss-Beauty-Power-Stage-Eyeshadow-Palette-The-Mystic-Glam.webp",
-"name": "Swiss Beauty Power Stage Eyeshadow Palette - The Mystic Glam",
+"name": "Swiss Beauty Stage - The Mystic Glam",
 "description": "Known as the ‘Flame of the Forest’, this tree bursts into a vibrant display of red flowers every summer. Perfect for beautifying avenues and gardens.",
 "category_name": "Eyes",
 "price": 1599.00
@@ -34,7 +34,7 @@
 {
 "id": 5,
 "image": "https://i.ibb.co.com/TDVcN2xm/Swiss-Beauty-Ultimate-Eyeshadow-Palette-02.webp",
-"name": "Swiss Beauty Ultimate Eyeshadow Palette - 02",
+"name": "Swiss Beauty Ultimate Eyeshadow Palette",
 "description": "A fragrant flowering tree that adorns gardens with its delicate white blossoms. Widely cherished in traditional rituals and perfumery.",
 "category_name": "Eyes",
 "price": 499.00
@@ -42,7 +42,7 @@
 {
     "id": 6,
     "image": "https://i.ibb.co.com/bM0Y4215/Nirvana-Color-Face-Perfect-Liquid-Foundation-Light-Honey-F04.webp",
-    "name": "Nirvana Color Face Perfect Liquid Foundation - Light Honey F04",
+    "name": "Nirvana Color Face Liquid Foundation - Light Honey",
     "description": "Nirvana Color features four new full coverage yet buildable foundations that give a flawless, long-lasting finish, cover up blemishes, and conceal imperfections and dark circles. These foundations are made to complement Bangladeshi skin tones.",
     "category_name": "Face",
     "price": 349.00
@@ -58,7 +58,7 @@
   {
     "id": 8,
     "image": "https://i.ibb.co.com/6cTMVk2h/L-A-Girl-Pro-BB-Cream-GBB942-Light.jpg",
-    "name": "L.A. Girl Pro BB Cream GBB942 Light",
+    "name": "L.A. Girl Pro BB Cream GBB942 Light Foundation",
     "description": "HD PRO BB Cream is formulated without parabens and made fragrance-free to pamper sensitive skin and lavishly nourish skin with added Vitamin B3, C and E. The silky formula covers a wide range of skin tones with eight diverse shades. This is your all-in-one skin beautifier that primes, moisturizes and enhances skin tone.",
     "category_name": "Face",
     "price": 550.00

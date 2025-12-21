@@ -2,13 +2,12 @@ import React, { useContext } from 'react'
 import { ShopContext } from '../context/ShopContext'
 import { Link } from 'react-router-dom';
 
+const PerfumeItem = ({id, image, name, price}) => {
+    const {currency} = useContext(ShopContext);
 
-const HomeMakeup = ({id, image, name, price}) => {
-    
-  const {currency} = useContext(ShopContext);
   return (
-    <Link to={`/makeup/${id}`}>
-     <div className="card w-full bg-stone-200 shadow-none rounded-none cursor-pointer  hover:bg-black/20 ">
+    <Link to={`/perfume/${id}`}>
+      <div className="card w-full bg-stone-200 shadow-none rounded-none cursor-pointer  hover:bg-black/20 ">
             
             
             <figure className="relative h-75  w-full rounded-none overflow-hidden">
@@ -31,8 +30,9 @@ const HomeMakeup = ({id, image, name, price}) => {
            </div>
             
         </div>
-        </Link>
+    
+    </Link>
   )
 }
 
-export default HomeMakeup
+export default PerfumeItem

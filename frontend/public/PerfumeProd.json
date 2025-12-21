@@ -4,7 +4,7 @@
   "image": "https://i.ibb.co.com/Cp8vnkS6/2b4ce80d49c6032b337a8c93c34b851e.jpg",
   "name": "Velvet Mist Essence",
   "description": "A soft, airy fragrance that blends white florals with a touch of clean musk. Velvet Mist Essence surrounds you with a gentle, comforting freshness perfect for daily wear.",
-  "category_name": "Eau de Toilette",
+  "category_name": "Perfume",
   "price": 475.00
 },
 {
@@ -12,7 +12,7 @@
   "image": "https://i.ibb.co.com/5xc2C8Pc/2bfac03770dfe0d6671cb82270eff0bf.jpg",
   "name": "Blush Air Whisper",
   "description": "A subtle blend of pink peony, pear dew, and soft musk. Blush Air Whisper delivers a youthful, modern scent ideal for those who love light, uplifting perfumes.",
-  "category_name": "Eau de Toilette",
+  "category_name": "Perfume",
   "price": 184.00
 },
 
@@ -21,7 +21,7 @@
   "image": "https://i.ibb.co.com/cctZBZpK/607f0a59d0c6171a9142883af93b9b49.jpg",
   "name": "Radiant Bloom Extrait",
   "description": "A luminous floral composition featuring jasmine petals, neroli, and bright citrus top notes. Radiant Bloom Extrait leaves a long-lasting, sophisticated trail.",
-  "category_name": "Extrait de Parfum",
+  "category_name": "Perfume",
   "price": 1300.00
 },
 {
@@ -29,7 +29,7 @@
   "image": "https://i.ibb.co.com/hFSkpPzR/762c48b8ed0bf6292314988344930616.jpg",
   "name": "Peach Petal Aura",
   "description": "Inspired by sun-kissed peach orchards, this fragrance combines juicy peach, soft vanilla cream, and gentle amber for a fresh yet sensual aroma.",
-  "category_name": "Women's Perfume",
+  "category_name": "Perfume",
   "price": 649.00
 },
 {
@@ -37,7 +37,7 @@
   "image": "https://i.ibb.co.com/20cTSVP6/Y0997185-C099800162-E02-GHC.webp",
   "name": "Bloom Notes No.05",
   "description": "A modern floral blend of rose water, freesia, and powdery amber. Bloom Notes No.05 offers delicate freshness with a refined, feminine character.",
-  "category_name": "Eau de Parfum",
+  "category_name": "Perfume",
   "price": 499.00
 },
 {
@@ -45,7 +45,7 @@
   "image": "https://i.ibb.co.com/HpGQRY2C/Y0786427-C099700399-E02-GHC.jpg",
   "name": "Sanjhbela Essence Noir",
   "description": "A dusk-inspired scent featuring smoky florals, spiced amber, and soft woods. Mysterious, elegant, and perfect for evening wear.",
-  "category_name": "Eau de Parfum",
+  "category_name": "Perfume",
   "price": 599.00
 },
 {
@@ -53,7 +53,7 @@
   "image": "https://i.ibb.co.com/d0psn2q3/Y0997181-C099700667-E02-GHC.webp",
   "name": "Exotic Aura 36",
   "description": "A rich multi-layered perfume built with exotic fruits, dark florals, and creamy sandalwood. Designed for bold personalities who love depth and complexity.",
-  "category_name": "Niche Perfume",
+  "category_name": "Perfume",
   "price": 1499.00
 },
 {
@@ -61,7 +61,7 @@
   "image": "https://i.ibb.co.com/0RhW5QpK/Y0742427-C099700394-E02-GHC.webp",
   "name": "Mystic Glam Oud",
   "description": "A warm, alluring blend of rose, oud wood, and saffron wrapped in smoky resin. Mystic Glam Oud creates an intoxicating, premium niche aroma.",
-  "category_name": "Extrait de Parfum",
+  "category_name": "Perfume",
   "price": 1599.00
 },
 {
@@ -69,7 +69,7 @@
   "image": "https://i.ibb.co.com/Cs8zjxF8/Y0749427-C099700402-E02-GHC.webp",
   "name": "White Blossom Veil",
   "description": "A delicate fragrance built around white jasmine, soft musk, and creamy lily. Perfect for lovers of clean, floral elegance.",
-  "category_name": "Eau de Parfum",
+  "category_name": "Perfume",
   "price": 499.00
 },
 {
@@ -77,7 +77,7 @@
   "image": "https://i.ibb.co.com/fYB4jKPX/Y0750427-C099700396-E02-GHC.webp",
   "name": "Honey Mist Essence",
   "description": "A warm, comforting scent blending honey drizzle, vanilla bean, and light citrus. Soft, sweet, and beautifully balanced.",
-  "category_name": "Body Fragrance",
+  "category_name": "Perfume",
   "price": 349.00
 },
 {
@@ -85,7 +85,7 @@
   "image": "https://i.ibb.co.com/HfTWn3g7/Y0840550-C099700392-E02-GHC.jpg",
   "name": "Vanilla Soft Focus",
   "description": "A gentle fragrance centered around creamy vanilla, cotton musk, and soft powdery notes. Subtle, cozy, and effortlessly wearable.",
-  "category_name": "Body Fragrance",
+  "category_name": "Perfume",
   "price": 1200.00
 },
 {
@@ -93,7 +93,7 @@
   "image": "https://i.ibb.co.com/hxwhNVdm/Y0958160-C099700388-E02-GHC.webp",
   "name": "Light Breeze Glow",
   "description": "Fresh citrus, white tea, and soft woods combine to create an easy, everyday fragrance that feels refreshing and uplifting.",
-  "category_name": "Body Fragrance",
+  "category_name": "Perfume",
   "price": 550.00
 },
 {
@@ -101,7 +101,7 @@
   "image": "https://i.ibb.co.com/bgKjSCFk/Y0996013-C099700400-E01-GHC.webp",
   "name": "Sunlit Sand Amber",
   "description": "Inspired by warm coastal sands, this scent blends amber resin, coconut wood, and soft tonka for a sun-drenched glowing aroma.",
-  "category_name": "Niche Perfume",
+  "category_name": "Perfume",
   "price": 4200.00
 },
 {
@@ -109,7 +109,7 @@
   "image": "https://i.ibb.co.com/JRKnFQjT/3c1a8fe991f50af27155896fad30a085.jpg",
   "name": "Crystal Fresh Purity",
   "description": "A clean, refreshing fragrance featuring water lily, crisp pear, and airy musk. Perfect for those who love minimalist, pure scents.",
-  "category_name": "Fresh Perfume",
+  "category_name": "Perfume",
   "price": 800
 },
 {
@@ -117,7 +117,7 @@
   "image": "https://i.ibb.co.com/s9x5LDvn/Y0996060-C099700401-E02-GHC.webp",
   "name": "Lavender Calm Oil",
   "description": "A soothing perfume oil crafted from pure lavender essence with subtle herbal undertones. Ideal for layering or nighttime relaxation.",
-  "category_name": "Perfume Oil",
+  "category_name": "Perfume",
   "price": 248.00
 },
 {
@@ -125,7 +125,7 @@
   "image": "https://i.ibb.co.com/B5vFYpJN/Y0996414-C099700398-E02-GHC.jpg",
   "name": "Scarlet Bloom Mist",
   "description": "A vibrant fruity-floral perfume combining red berries, rose petals, and a whisper of warm amber. Bright, romantic, and charming.",
-  "category_name": "Eau de Parfum",
+  "category_name": "Perfume",
   "price": 149.00
 },
 {
@@ -133,7 +133,7 @@
   "image": "https://i.ibb.co.com/Psv4zx1H/Y0997153-C099700382-E02-GHC.jpg",
   "name": "Raspberry Kiss Aura",
   "description": "A sweet and playful scent blending raspberry nectar with soft petals and creamy musk. Light, fresh, and irresistibly feminine.",
-  "category_name": "Eau de Toilette",
+  "category_name": "Perfume",
   "price": 330.00
 },
 {
@@ -141,7 +141,7 @@
   "image": "https://i.ibb.co.com/7JKk74jx/Y0997181-C099700667-E02-GHC.webp",
   "name": "Red Bloom Intense",
   "description": "A bold, long-lasting perfume crafted with dark rose, berry syrup, and sensual amber. Deep, confident, and modern.",
-  "category_name": "Extrait de Parfum",
+  "category_name": "Perfume",
   "price": 2000
 },
 {
@@ -149,7 +149,7 @@
   "image": "https://i.ibb.co.com/4nTbLD5v/Y0997183-C099800163-E02-GHC.jpg",
   "name": "Cherry Bloom Shine",
   "description": "A fruity-floral fragrance featuring cherry blossom, red cherries, and a soft, powdery finish. Feminine and uplifting.",
-  "category_name": "Eau de Parfum",
+  "category_name": "Perfume",
   "price": 204.00
 },
 {
@@ -157,7 +157,7 @@
   "image": "https://i.ibb.co.com/20cTSVP6/Y0997185-C099800162-E02-GHC.webp",
   "name": "Olive Mist Fresh",
   "description": "A green, earthy fragrance combining olive leaf, herbal freshness, and clean musk. Unique, modern, and refreshing.",
-  "category_name": "Fresh Perfume",
+  "category_name": "Perfume",
   "price": 208.00
 },
 {
@@ -165,7 +165,7 @@
   "image": "https://i.ibb.co.com/pBDfCQ4P/Y0998027-C099800296-E02-GHC.jpg",
   "name": "Dazzling Aura Sheer",
   "description": "A sparkling blend of citrus zest, soft florals, and airy amber. Light, bright, and perfect for everyday elegance.",
-  "category_name": "Eau de Toilette",
+  "category_name": "Perfume",
   "price": 187.00
 }
 

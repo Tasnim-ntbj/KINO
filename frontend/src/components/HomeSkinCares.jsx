@@ -1,23 +1,24 @@
-import React, { useEffect, useState } from 'react'
+
+import React, { useContext, useEffect, useState } from 'react'
+import { ShopContext } from '../context/ShopContext'
 import HomeSkinCare from './HomeSkinCare';
 
 
 const HomeSkinCares = () => {
+     const {products} = useContext(ShopContext);
      const [homeSkinCare, setHomeSkinCares] = useState([]);
-        useEffect(() => {
-            fetch("/public/SkincareProd.json")
-                .then((res) => res.json())
-                .then((data) => setHomeSkinCares(data));
-    
-        }, [])
-    
-        const HomeSkincareSliced = homeSkinCare.slice(0, 4);
+        
+     useEffect(()=>{
+        setHomeSkinCares(products.slice(41,45))
+      // eslint-disable-next-line react-hooks/exhaustive-deps
+      },[])
+      
   return (
      <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
-        
-            {HomeSkincareSliced.map((product) => (
-                <HomeSkinCare key={product.id} HomeSkinCares={product} />
-            ))}
+    
+             {homeSkinCare.map((item, index) => (
+                 <HomeSkinCare key={index} id={item.id} image={item.image} name={item.name} price={item.price}/>
+             ))}
         
         </div>
   )

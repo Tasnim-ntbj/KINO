@@ -1,18 +1,19 @@
 import React from 'react';
-import { NavLink } from 'react-router-dom';
+import { NavLink, useNavigate } from 'react-router-dom';
 // import './login.module.css' 
 
 
 const Login = () => { 
+        const navigate = useNavigate();
   return (
     
-    <div id='login-container' className="w-full h-full flex flex-col mx-auto mt-65 px-190 my-20' "> 
+    <div id='login-container' className="w-full h-full flex flex-col mx-auto mt-50 px-140 my-20' "> 
         
   
         <div className='flex justify-between items-center mb-10'>
             <h2 className='text-2xl font-bold text-gray-800'>Account Login</h2>
-<NavLink to='/'>
-            <button 
+
+            <button  onClick={()=>navigate('/', {replace:true})}
                 id='login-btn' 
                 className="btn btn-ghost btn-circle p-2 rounded-full hover:bg-gray-100" 
                 
@@ -21,7 +22,7 @@ const Login = () => {
                     <path strokeLinecap="round" strokeLinejoin="round" d="M6 18 18 6M6 6l12 12" />
                 </svg>
             </button>
-            </NavLink>
+        
         </div>
 
         <form className="login-form-tailwind">
@@ -61,7 +62,7 @@ const Login = () => {
             </div>
   
             <button 
-                type="submit"
+                type="submit"  onClick={()=>navigate('/', {replace:true})}
               
                 className="w-full py-3 mt-4 bg-black rounded-lg text-white text-base font-medium cursor-pointer transition duration-300 hover:bg-gray-700"
             >

@@ -8,7 +8,6 @@ import CarouselFour from '../components/CarouselFour'
 import HomeSkinCares from '../components/HomeSkinCares'
 import CardScroller from '../components/CardScroller'
 import Title from '../components/Title'
-import CarouselFive from '../components/CarouselFive'
 import TitlePerfume from '../components/TitlePerfume'
 import HomePerfumes from '../components/HomePerfumes'
 
@@ -29,7 +28,8 @@ const Home = () => {
       
       {/* <CarouselFive></CarouselFive> */}
       <CarouselFour></CarouselFour>
-      <CarouselTwo></CarouselTwo>
+      <div className='mt-30'>
+      <CarouselTwo></CarouselTwo></div>
       <div >
       <Title></Title></div>
       <div className='max-w-7xl mx-auto px-4 my-20'>
@@ -39,7 +39,7 @@ const Home = () => {
 
 
       <CarouselThree></CarouselThree>
-      <Footer></Footer>
+      
       
      
     </div>

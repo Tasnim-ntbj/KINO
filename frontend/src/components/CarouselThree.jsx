@@ -34,14 +34,14 @@ const CarouselThree = () => {
                 {carouselsData.headerLine2}
               </h1>
               
-              <div>
+              {/* <div>
                 <a
                   href="#"
                   className="text-white text-lg uppercase underline mt-8"
                 >
                   Discover the Collection
                 </a>
-              </div>
+              </div> */}
             </div>
           </div>
 
