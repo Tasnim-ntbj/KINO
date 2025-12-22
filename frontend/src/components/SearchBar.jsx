@@ -9,7 +9,7 @@ const SearchBar = () => {
   const location = useLocation();
 
   useEffect(() => {
-    const validPaths = ['perfumes', 'makeup', 'skincare'];
+    const validPaths = ['perfumes', 'makeup', 'skincare','/'];
     const isPathValid = validPaths.some(path => location.pathname.includes(path));
 
     if (isPathValid && showSearch) {

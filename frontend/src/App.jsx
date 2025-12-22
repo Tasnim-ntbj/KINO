@@ -12,6 +12,7 @@ import AboutUs from "./pages/AboutUs";
 import SearchBar from "./components/SearchBar";
 import Footer from "./components/Footer";
 import Product from "./pages/Product";
+import Signup from "./pages/Signup";
 
 
 
@@ -25,13 +26,14 @@ const App = () => {
     <Route path="/" element={<Home/>}/>
     <Route path="/categories" element={<Categories/>}/>
     <Route path="/makeup" element={<Makeup/>}/>
-    <Route path="/makeup/:makeupId" element={<Product/>}/>
-    <Route path="/skincare/:skincareId" element={<Product/>}/>
-    <Route path="/perfumes/:perfumesId" element={<Product/>}/>
+    <Route path="/makeup/:productId" element={<Product/>}/>
+    <Route path="/skincare/:productId" element={<Product/>}/>
+    <Route path="/perfumes/:productId" element={<Product/>}/>
     <Route path="/skincare" element={<Skincare/>}/>
     <Route path="/perfumes" element={<Perfumes/>}/>
     {/* <Route path="/skincare/:skincareId" element={<Skincare/>}/> */}
     <Route path="/login" element={<Login/>}/>
+    <Route path="/signup" element={<Signup/>}/>
     <Route path="/cart" element={<Cart/>}/>
     {/* <Route path="/about-us" element={<AboutUs/>}/> */}
     </Routes>

@@ -1,17 +1,15 @@
-import React from 'react';
-import { NavLink, useNavigate } from 'react-router-dom';
-// import './login.module.css' 
+import React from 'react'
+import { NavLink, useNavigate } from 'react-router-dom'
 
-
-const Login = () => { 
-        const navigate = useNavigate();
+const Signup = () => {
+   const navigate = useNavigate();
   return (
     
-    <div id='login-container' className="w-full h-full flex flex-col mx-auto mt-25 px-140 my-20 mb-20' "> 
+    <div id='login-container' className="w-full h-full flex flex-col mx-auto mt-25 mb-25 px-140 my-20' "> 
         
   
         <div className='flex justify-between items-center mb-10'>
-            <h2 className='text-2xl font-bold text-gray-800'>Account Login</h2>
+            <h2 className='text-2xl font-bold text-gray-800'>Account Sign Up</h2>
 
             <button  onClick={()=>navigate('/', {replace:true})}
                 id='login-btn' 
@@ -34,8 +32,8 @@ const Login = () => {
                     id="username" 
                     required 
             
-                    className="w-full pb-2 border-b-2 border-gray-300 outline-none bg-transparent text-base focus:border-black peer" 
-                    placeholder='Username'
+                    className="w-full pb-2 border-b-2 border-gray-300 outline-none bg-transparent text-base focus:border-black peer"
+                    placeholder='Username' 
                 />
                 {/* <label 
                     htmlFor="username" 
@@ -54,8 +52,6 @@ const Login = () => {
                     required 
                     className="w-full pb-2 border-b-2 border-gray-300 outline-none bg-transparent text-base focus:border-black peer" 
                     placeholder='Password'
-
-                    
                 />
                 {/* <label 
                     htmlFor="password" 
@@ -64,26 +60,42 @@ const Login = () => {
                     Password
                 </label> */}
             </div>
+          
+            <div className="input-group-tailwind relative mb-8">
+                <input 
+                    type="password" 
+                    id="password" 
+                    required 
+                    className="w-full pb-2 border-b-2 border-gray-300 outline-none bg-transparent text-base focus:border-black peer" 
+                    placeholder='Confirm Password'
+                />
+                {/* <label 
+                    htmlFor="password" 
+                    className="absolute top-2 left-0 text-gray-500 text-base pointer-events-none transition-all duration-300"
+                >
+                
+                </label> */}
+            </div>
   
             <button 
                 type="submit"  onClick={()=>navigate('/', {replace:true})}
               
                 className="w-full py-3 mt-4 bg-black rounded-lg text-white text-base font-medium cursor-pointer transition duration-300 hover:bg-black/90"
             >
-                Login
+                Sign up
             </button>
            
             <p className="message mt-6 text-center text-sm text-gray-600">
-                Not registered? 
-                <NavLink to="/signup">
+                Already registered? 
+                <NavLink to="/login">
                 <a  className="text-black ml-1 font-medium hover:underline">
-                    Sign Up
+                    Login
                 </a>
                 </NavLink>
             </p>
         </form>
     </div>
-  );
+  )
 }
 
-export default Login;
+export default Signup

@@ -26,7 +26,7 @@ const HomePerfume = ({id, image, name, price}) => {
         
             <div className="card-body p-4">
                  <h2 className="card-title font-normal text-base">{name}</h2>
-               <p className="text-sm text-gray-500">{currency} {price}</p>
+               <p className="text-sm  text-gray-500"><span className='font-bold text-stone-600'>{currency} </span>{price}</p>
            </div>
             
         </div>

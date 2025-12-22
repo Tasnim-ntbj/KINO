@@ -88,9 +88,9 @@ export const Navbar = () => {
             
                     <li><NavLink to="/" >Home</NavLink></li>
                     <li><NavLink to="/perfumes" >Perfumes</NavLink></li>
-                    <li><NavLink to="/skincare">SkinCare</NavLink></li>
+                    <li><NavLink to="/skincare">Skincare</NavLink></li>
                     <li><NavLink to="/makeup">Makeup</NavLink></li>
-                    <li><NavLink to="/about-us">About Us</NavLink></li>
+                    {/* <li><NavLink to="/about-us">About Us</NavLink></li> */}
                 </ul>
 
                 </div>

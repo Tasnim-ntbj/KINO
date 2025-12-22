@@ -3,9 +3,9 @@ import styles from './navbar.module.css';
 const Footer = () => {
   return (
     <>
-      <footer class="footer border-t  border-base-300 sm:footer-horizontal text-base-content p-10">
+      <footer className="footer border-t  border-base-300 sm:footer-horizontal text-base-content p-10">
     <nav>
-      <h6 class="footer-title">Services</h6>
+      <h6 className="footer-title">Services</h6>
       <a class="link link-hover">Branding</a>
       <a class="link link-hover">Design</a>
       <a class="link link-hover">Marketing</a>
