@@ -1,3 +1,4 @@
+/* eslint-disable react-hooks/exhaustive-deps */
 import React, { useContext, useEffect, useState } from 'react'
 import { ShopContext } from '../context/ShopContext'
 import HomePerfume from '../components/HomePerfume.jsx';
@@ -24,7 +25,7 @@ const Perfumes = () => {
   useEffect(() => {
     // eslint-disable-next-line react-hooks/set-state-in-effect
     applyFilter();
-  }, [search, showSearch, products,applyFilter]);
+  }, [search, showSearch, products]);
 
   return (
     <div className='max-w-7xl mx-auto px-4 my-20'>
