@@ -754,7 +754,7 @@ export const products = [
     id: 26,
     image:
       "https://i.ibb.co.com/7JwbpqcN/Swiss-Beauty-Power-Stage-Eyeshadow-Palette-The-Mystic-Glam.webp",
-    name: "Swiss Beauty Stage - The Mystic Glam",
+    name: "Swiss Beauty Stage - The Mystic Glam Beauty",
     description:
       "Known as the ‘Flame of the Forest’, this tree bursts into a vibrant display of red flowers every summer. Perfect for beautifying avenues and gardens.",
     category_name: "Eyes",
@@ -820,7 +820,7 @@ export const products = [
     id: 32,
     image:
       "https://i.ibb.co.com/TMZr8zLk/Wazih-Organic-Lavender-Essential-Oil.jpg",
-    name: "Wazih Organic Lavender Essential Oil",
+    name: "Wazih Organic Lavender Essential Oil -500ml",
     description:
       "Lavender Essential Oil Lavender essential oil is a type of essential oil. Lavender is a very popular and popular flower name from which this essential oil is obtained. Its soft fragrance takes away everyone's mind. There is no pair of lavender oil for soft fragrance, moisturizing skin and keeping hair beautiful.",
     category_name: "Face",
@@ -917,7 +917,7 @@ export const products = [
     id: 41,
     image:
       "https://i.ibb.co.com/fYy5RvKk/Garnier-Skin-Active-Micellar-Clear-Water.jpg",
-    name: "Garnier Skin Active Micellar Clear Water",
+    name: "Garnier Skin Active Micellar Water",
     description:
       "This cleanser is surprisingly powerful yet gentle to skin. It is specially formulated to effectively cleanse, remove makeup, and refresh skin. Like a magnet, micelles capture and lift away dirt, oil and makeup without harsh rubbing, leaving skin perfectly clean, and refreshed without over-drying.",
     category_name: "Face",
@@ -928,7 +928,7 @@ export const products = [
     id: 42,
     image:
       "https://i.ibb.co.com/RGHd4L4n/Revlon-Photo-Ready-Eye-Primer-Brightener-003-Medium.jpg",
-    name: "Revlon PhotoReady Eye Primer + Brightener - 003 Medium",
+    name: "Revlon PhotoReady Eye Primer 003",
     description:
       "Our PhotoReady™ Eye Primer + Brightener reduces the appearance of lines and creases under eyes and can also be used anywhere on the face as a brightening “pick me up",
     category_name: "Eyes",

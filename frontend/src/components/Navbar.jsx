@@ -120,7 +120,7 @@ export const Navbar = () => {
 
                         {/* login btn */}
                         <div >
-                            <button onClick={()=>navigate('/login', {replace:true})} className="btn btn-outline border-0 rounded-2xl hover:bg-black/10 shadow-none transition-colors duration-300 ease-in-out">
+                            <button onClick={()=>navigate('/signup', {replace:true})} className="btn btn-outline border-0 rounded-2xl hover:bg-black/10 shadow-none transition-colors duration-300 ease-in-out">
                                 <span className='text-gray-600 font-light text-sm'>Sign Up</span> 
                             </button>
                         </div>

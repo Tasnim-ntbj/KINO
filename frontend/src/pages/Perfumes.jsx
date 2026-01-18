@@ -23,7 +23,7 @@ const Perfumes = () => {
 
   // 3. Re-run filter whenever search or products change
   useEffect(() => {
-    // eslint-disable-next-line react-hooks/set-state-in-effect
+     
     applyFilter();
   }, [search, showSearch, products]);
 
